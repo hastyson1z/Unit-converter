@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+
+    
+        <div class="converter">
+            <h3>Length Converter</h3>
+            <input type="number" id="lengthValue" placeholder="Enter value" />
+            <select id="lengthFromUnit">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+            </select>
+            <select id="lengthToUnit">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+            </select>
+            <button onclick="convertLength()">Convert</button>
+            <p id="lengthResult"></p>
+        </div>
+
+        
+        <div class="converter">
+            <h3>Weight Converter</h3>
+            <input type="number" id="weightValue" placeholder="Enter value" />
+            <select id="weightFromUnit">
+                <option value="kilograms">Kilograms</option>
+                <option value="grams">Grams</option>
+            </select>
+            <select id="weightToUnit">
+                <option value="kilograms">Kilograms</option>
+                <option value="grams">Grams</option>
+            </select>
+            <button onclick="convertWeight()">Convert</button>
+            <p id="weightResult"></p>
+        </div>
+
+
+        <div class="converter">
+            <h3>Temperature Converter</h3>
+            <input type="number" id="tempValue" placeholder="Enter value" />
+            <select id="tempFromUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <select id="tempToUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <button onclick="convertTemperature()">Convert</button>
+            <p id="tempResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
